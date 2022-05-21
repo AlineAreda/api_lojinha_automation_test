@@ -1,0 +1,14 @@
+{
+  "produtoNome": "TECLADO LOGITECH K480",
+  "produtoValor": 399,
+  "produtoCores": [
+    "preto"
+  ],
+  "produtoUrlMock": "",
+  "componentes": [
+    {
+      "componenteNome": "MOUSE LOGITECH M535",
+      "componenteQuantidade": 1
+    }
+  ]
+}

@@ -42,7 +42,6 @@ public class ProdutoPojo {
         this.componentes = componentes;
     }
 
-
     public double getProdutoValor() {
         return produtoValor;
     }
@@ -51,3 +50,5 @@ public class ProdutoPojo {
         this.produtoValor = produtoValor;
     }
 }
+
+
