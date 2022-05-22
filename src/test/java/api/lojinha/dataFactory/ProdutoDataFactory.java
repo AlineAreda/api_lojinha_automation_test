@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
 public class ProdutoDataFactory {
+
 
 public static ProdutoPojo criarProduto(String payload) throws IOException {
     ObjectMapper objectMapper= new ObjectMapper();

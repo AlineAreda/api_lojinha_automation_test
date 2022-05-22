@@ -8,6 +8,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
+@DisplayName("Testes do dominio do usuario")
 public class UsuarioTest extends BaseTest {
 
     private static final String ENDPOINT_USUARIOS= "/v2/usuarios";

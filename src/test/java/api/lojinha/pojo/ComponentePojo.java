@@ -1,24 +1,18 @@
 package api.lojinha.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ComponentePojo {
     private String componenteNome;
     private int componenteQuantidade;
 
-
-    public String getComponenteNome() {
-        return componenteNome;
-    }
-
-    public void setComponenteNome(String componenteNome) {
-        this.componenteNome = componenteNome;
-    }
-
-
-    public int getComponenteQuantidade() {
-        return componenteQuantidade;
-    }
-
-    public void setComponenteQuantidade(int componenteQuantidade) {
-        this.componenteQuantidade = componenteQuantidade;
-    }
 }

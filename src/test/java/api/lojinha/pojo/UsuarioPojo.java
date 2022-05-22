@@ -1,5 +1,16 @@
 package api.lojinha.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UsuarioPojo {
 
 
@@ -7,27 +18,4 @@ public class UsuarioPojo {
     private String usuarioLogin;
     private String usuarioSenha;
 
-    public String getUsuarioLogin() {
-        return usuarioLogin;
-    }
-
-    public void setUsuarioLogin(String usuarioLogin) {
-        this.usuarioLogin = usuarioLogin;
-    }
-
-    public String getUsuarioSenha() {
-        return usuarioSenha;
-    }
-
-    public void setUsuarioSenha(String usuarioSenha) {
-        this.usuarioSenha = usuarioSenha;
-    }
-
-  public String getUsuarioNome() {
-      return usuarioNome;
-    }
-
-    public void setUsuarioNome(String usuarioNome) {
-        this.usuarioNome = usuarioNome;
-    }
 }
