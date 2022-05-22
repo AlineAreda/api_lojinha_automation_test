@@ -14,7 +14,7 @@ public class UsuarioTest extends BaseTest {
     private static final String ENDPOINT_USUARIOS= "/v2/usuarios";
 
     @Test
-    @DisplayName("Quando dados do usuario validos, então usuario cadastrado com sucesso")
+    @DisplayName("Quando dados do usuario validos, entao usuario cadastrado com sucesso")
     public void testCadastroNovoUsuarioComSucesso() throws IOException {
         given()
                 .body(UsuarioDataFactory.adicionaNovoUsuario())
@@ -22,13 +22,12 @@ public class UsuarioTest extends BaseTest {
                 .post(ENDPOINT_USUARIOS)
         .then()
                 .statusCode(201)
-                .log().all()
                 .body("message", is("Usuário adicionado com sucesso"))
         ;
     }
 
     @Test
-    @DisplayName("Quando usuario já cadastrado não realizar novo cadastro")
+    @DisplayName("Quando usuario já cadastrado nao realizar novo cadastro")
     public void testUsuarioJaCadastado() throws IOException {
         given()
                 .body(UsuarioDataFactory.adicionaUsuario())
@@ -36,7 +35,6 @@ public class UsuarioTest extends BaseTest {
                 .post(ENDPOINT_USUARIOS)
         .then()
                 .statusCode(409)
-                .log().all()
                 .body("error", is("O usuário alineareda já existe."))
         ;
     }
