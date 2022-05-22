@@ -16,7 +16,7 @@ public class ProdutoTest extends BaseTest {
     private static final String ENDPOINT_PRODUTOS= "/v2/produtos";
 
     @Test
-    @DisplayName("Quando credencial admin e dados para cadastro do produto validos, entao produto cadastrado com sucesso")
+    @DisplayName("Quando credencial e dados para cadastro do produto validos, entao produto cadastrado com sucesso")
     public void testCadastraNovoProdutoComSucesso() throws IOException {
         given()
                 .header("token", UtilsLogin.loginAdmin())
@@ -80,5 +80,6 @@ public class ProdutoTest extends BaseTest {
                 .body("data.componentes[0].componenteNome", is("MOUSE LOGITECH M535"))
                 .body("data.componentes[0].componenteQuantidade", is(1));
     }
+
 }
 
