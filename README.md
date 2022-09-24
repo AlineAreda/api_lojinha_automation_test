@@ -15,7 +15,7 @@ Projeto de automação de testes  de API Rest do software denominado Lojinha, ap
 
 ## 📌 Notas Gerais
 
-Projeto em construção!
+
 
 
 
